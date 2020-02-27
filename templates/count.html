@@ -1,0 +1,15 @@
+<h1>Counted: </h1>
+
+Your text:
+<br>
+{{ fullText }}
+<br><br><br>
+Word count:
+<br>
+{% for word, count in wordDict %}
+{{word}} -- {{count}} <br>
+
+{% endfor %}
+
+<a href = "{% url 'home' %}">Start again </a>
+<a href = "{% url 'about' %}">About </a>
